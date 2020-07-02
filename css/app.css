@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/cover.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cover.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: 'Poppins', serif;
+}
+
+header {
+  background-color: whitesmoke;
+}
+
+header .header-main {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+header .header-main .brand {
+  float: left;
+  width: 15%;
+}
+
+header .header-main .brand img {
+  width: 100%;
+  cursor: pointer;
+}
+
+header .header-main .main-menu {
+  float: right;
+  width: 70%;
+  margin-top: 8px;
+}
+
+header .header-main .main-menu ul {
+  margin-top: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000;
+  list-style: none;
+  right: 60px;
+  top: 15px;
+  position: absolute;
+}
+
+header .header-main .main-menu ul li {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+.banner .banner-content {
+  width: 80%;
+  color: #fff;
+  margin: 16% auto 0;
+}
+
+.banner .banner-content h1 {
+  font-size: 60px;
+}
+
+.banner .banner-content p {
+  font-size: 16px;
+  margin: 40px 0 50px;
+}
+
+.banner .banner-content ul {
+  list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.banner .banner-content ul li {
+  margin-right: 25px;
+  position: relative;
+}
+
+.banner .banner-content ul li a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  display: block;
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+}
+
+.banner .banner-content ul li a:hover {
+  border: 2px solid red;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.banner .banner-content ul li span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: red;
+  top: 0;
+  position: absolute;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: -1;
+}
+
+.banner .banner-content ul li:hover span {
+  width: 100%;
+}
+/*# sourceMappingURL=app.css.map */

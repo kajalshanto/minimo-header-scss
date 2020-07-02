@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/cover.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    font-family: 'Poppins', serif;
+}
+
+header{
+    background-color: whitesmoke;
+
+    .header-main{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 15px 0;
+
+        .brand{
+            float: left;
+            width: 15%;
+
+            img{
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+
+        .main-menu{
+            float: right;
+            width: 70%; 
+            margin-top: 8px;
+
+            ul{
+                margin-top: 10px;
+                display: inline-flex;
+                color: #000;
+                list-style: none;
+                right: 60px;
+                top: 15px;
+                position: absolute;
+
+                li{ 
+                    cursor: pointer;
+                    font-size: 18px;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}
+
+.banner{
+    .banner-content{
+        width: 80%;
+        color: #fff;
+        margin: 16% auto 0;
+
+        h1{
+            font-size: 60px;
+        }
+        p{
+            font-size: 16px;
+            margin: 40px 0 50px;
+        }
+        ul{
+            list-style-type: none;
+            display: inline-flex;
+
+            li{
+                margin-right: 25px;
+                position: relative;
+
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    border: 2px solid #fff;
+                    display: block;
+                    padding: 10px;
+                    width: 120px;
+                    text-align: center;
+                }
+                a:hover{
+                    border: 2px solid red;
+                    transition: .4s;
+                }
+
+                span{
+                    display: block;
+                    width: 0;
+                    height: 100%;
+                    background-color: red;
+                    top: 0;
+                    position: absolute;
+                    transition: .4s;
+                    z-index: -1;
+                }
+            }
+
+            li:hover{
+                span{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
